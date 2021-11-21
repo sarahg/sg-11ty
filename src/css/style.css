@@ -1,3 +1,77 @@
+/* Colors */
+:root {
+    --blue: #2c5e7d;
+    --brown: #3c281f;
+    --gold: #f9d904;
+    --white: #fff;
+    --lightgray: #e0e0e0;
+    --orange: #ffb200;
+    --sand: #e8e2d0;
+}
+
 body {
-    font-family: sans-serif;
+    background-color: var(--brown);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+    padding: 0 0 2em 0;
+}
+.container {
+    background: var(--blue) url("../img/skyline.png") no-repeat 0 100%;
+    background-position-x: 30px;
+    padding: 1em 2em;
+}
+main {
+    margin-bottom: 220px;
+}
+h1 {
+    font-family: 'Candal', sans-serif;;
+    color: var(--gold);
+    font-size: 3em;
+    line-height: 1em;
+    margin: .5em 0 1em;
+}
+h2 {
+    font-weight: 600;
+    line-height: 1em;
+}
+
+a:hover {
+    border-bottom: 1px dotted var(--lightgray);
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 1.5em 0;
+}
+p, hr {
+    max-width: 670px;
+}
+
+footer a {
+    font-size: .8em;
+    color: white;
+    text-decoration: none;
+}
+footer li {
+    display: inline-block;
+}
+footer li:not(:last-of-type):after {
+    margin: 0 .25em 0 .5em;
+    content: "/";
+}
+
+@media only screen and (max-device-width: 440px) {
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+    h2 {
+        font-size: 1.25em;
+    }
 }

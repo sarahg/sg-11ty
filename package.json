@@ -13,5 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1"
+  },
+  "devDependencies": {
+    "eleventy-favicon": "^1.1.2",
+    "eleventy-google-fonts": "^0.0.5"
   }
 }
