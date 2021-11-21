@@ -10,13 +10,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/css/");
 
   // Plugins.
-  eleventyConfig.addPlugin(faviconPlugin, {destination: "./public"});
+  eleventyConfig.addPlugin(faviconPlugin);
   eleventyConfig.addPlugin(eleventyGoogleFonts);
 
   return {
     dir: {
       input: "src",
-      output: "public",
+      output: "_site",
     },
   };
 };
