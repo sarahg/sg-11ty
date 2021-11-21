@@ -1,1 +1,4 @@
-Hi
+---
+title: Updog
+layout: base.njk
+---
