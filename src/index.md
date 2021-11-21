@@ -1,9 +1,5 @@
 ---
-title: Updog
+title: Sarah German
 layout: base.njk
-templateEngineOverride: njk,md
 ---
 
-## Blog Posts
-
-{% include "postlist.njk" %}
