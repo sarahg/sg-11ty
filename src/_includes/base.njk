@@ -11,12 +11,12 @@
     <title>{{ title }}</title>
 </head>
 <body>
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
     <div class="container">
-        <header>
-            <h1>{{ title }}</h1>
-        </header>
         <main>
-            {{ content | safe }}
+            {% include "featurelist.njk" %}
         </main>
     </div>
     <footer>
