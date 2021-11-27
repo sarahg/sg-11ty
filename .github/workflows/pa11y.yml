@@ -1,0 +1,21 @@
+name: pa11y tests
+
+on: [pull_request]
+
+jobs:
+  build:
+    name: Building site and running pa11y-ci tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source.
+        uses: actions/checkout@v2
+
+      - name: Install 11ty and pa11y-ci dependencies.
+        run: npm install
+
+      - name: Start up dev server.
+        run: npm run start
+
+      - name: Run pa11y-ci.
+        run: npm run pa11y-ci
