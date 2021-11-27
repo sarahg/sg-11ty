@@ -21,8 +21,8 @@
     </div>
     <footer>
         <ul>
-            {% for social in socials %}
-                <li><a href="{{ social.url }}">{{ social.title }}</a></li>
+            {% for link in footerLinks %}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
             {% endfor %}
         </ul>
     </footer>
