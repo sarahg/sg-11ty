@@ -8,7 +8,6 @@
     --orange: #ffb200;
     --sand: #e8e2d0;
 }
-
 body {
     background: var(--blue);
     margin: 0;
@@ -45,6 +44,7 @@ h1 {
     letter-spacing: 0.03em;
     line-height: 1;
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+    max-width: 90%;
 }
 h2 {
     font-weight: 600;
@@ -74,14 +74,11 @@ hr {
 p, hr {
     max-width: 670px;
 }
-img {
+.feature-inner img {
     border-radius: 15%;
-    height: 100px;
+    height: 50px;
 }
 
-.feature {
-    margin: 0 0 2em 0;
-}
 .feature-inner {
     display: flex;
 }
@@ -92,6 +89,10 @@ img {
 footer {
     background-color: var(--brown);
     padding: .5em 0;
+    text-align: center;
+}
+footer ul {
+    padding: 0;
 }
 footer a {
     font-size: .8em;
@@ -108,6 +109,15 @@ footer li:not(:last-of-type):after {
     content: "/";
 }
 
+@media only screen and (min-width: 768px) {
+    .feature-inner img {
+        height: 100px;
+    }
+    footer {
+        text-align: left;
+        padding-left: 2em;
+    }
+}
 @media only screen and (min-width: 1140px) {
     .container {
         background: url("../img/skyline.webp") no-repeat bottom;
