@@ -10,12 +10,9 @@ jobs:
     steps:
       - name: Checkout source.
         uses: actions/checkout@v2
-
-      - name: Install 11ty and pa11y-ci dependencies.
-        run: npm install
-
-      - name: Start up dev server.
-        run: npm run start
-
-      - name: Run pa11y-ci.
-        run: npm run pa11y-ci
+      - run: npm ci
+      - run: npm start & npx wait-on http://localhost:8080
+      - name: Run pa11y
+        run: |
+          npm install -g pa11y
+          pa11y http://localhost:8080
