@@ -1,0 +1,17 @@
+name: pa11y tests
+
+on: [pull_request]
+
+jobs:
+  build:
+    name: Building site and running pa11y-ci tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source.
+        uses: actions/checkout@v2
+      - run: npm ci
+      - run: npm start & npx wait-on http://localhost:8080
+      - name: Run pa11y
+        run:
+          npm run pa11y-ci
