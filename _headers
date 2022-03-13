@@ -3,9 +3,9 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
-  content-security-policy: default-src 'self'; script-src 'self' *.cloudflareinsights.com; font-src fonts.gstatic.com
+  content-security-policy: default-src 'self' *.cloudflareinsights.com; script-src 'self' *.cloudflareinsights.com; font-src fonts.gstatic.com; connect-src cloudflareinsights.com; style-src 'self' fonts.googleapis.com
   referrer-policy: no-referrer
   permissions-policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()
 
-https://:project.pages.dev/*
+https://sg-11ty.pages.dev/*
   X-Robots-Tag: noindex
