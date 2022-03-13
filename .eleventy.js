@@ -6,6 +6,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/css");
 
+  // Include _headers file.
+  // https://jonkuperman.com/custom-headers-eleventy-cloudflare-pages/
+  eleventyConfig.addPassthroughCopy({ static: "/" });
+
   // Rebuild on file change.
   eleventyConfig.addWatchTarget("./src/css/");
 
