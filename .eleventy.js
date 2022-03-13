@@ -5,10 +5,7 @@ module.exports = function (eleventyConfig) {
   // Pass static assets to /public.
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/css");
-
-  // Include _headers file.
-  // https://jonkuperman.com/custom-headers-eleventy-cloudflare-pages/
-  eleventyConfig.addPassthroughCopy({ static: "/" });
+  eleventyConfig.addPassthroughCopy("./_headers");
 
   // Rebuild on file change.
   eleventyConfig.addWatchTarget("./src/css/");
