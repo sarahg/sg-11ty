@@ -1,6 +1,6 @@
 ---
 title: 👩‍💻 omg computers
-imageThumb: /img/gitlab-icon-rgb.jpg
+imageThumb: /img/gitlab.jpg
 imageThumbAlt: GitLab logo
 permalink: false
 date: 2021-01-02
