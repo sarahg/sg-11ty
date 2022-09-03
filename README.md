@@ -1,4 +1,8 @@
-# sarahg.dev
+# sarahg.dev [ARCHIVED]
+
+Repo archived 9/3/22. This project is now on [GitLab](https://gitlab.com/sarahg/sg-11ty).
+
+------
 
 My personal site, built with [11ty](https://www.11ty.dev/).
 
